@@ -1,6 +1,0 @@
-.terraform/
-terraform.tfvars
-.terraform.lock.hcl
-.tfvars
-/dev/.terraform/
-/prod/.terraform/
