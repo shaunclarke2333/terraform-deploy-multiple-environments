@@ -1,4 +1,4 @@
-# public subnet ip addresses CIDR blocks
+# public subnet ip addresses CIDR blocks for prod
 variable "public_subnet_cidr" {
   description = "public subnet ip addresses CIDR blocks"
   default = [
@@ -6,7 +6,12 @@ variable "public_subnet_cidr" {
   ]
 }
 
-# variable for environment tagging
+# variable for environment tagging in prod
 variable "env" {
   default = "prod"
+}
+
+# vpc cidr block for the prod environment
+variable "vpc_cidr" {
+  default = "10.2.0.0/16"
 }

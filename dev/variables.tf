@@ -10,3 +10,7 @@ variable "public_subnet_cidr" {
 variable "env" {
   default = "dev"
 }
+
+variable "vpc_cidr" {
+  default = "10.3.0.0/16"
+}
