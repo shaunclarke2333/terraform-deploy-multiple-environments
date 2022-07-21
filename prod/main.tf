@@ -20,12 +20,12 @@ data "aws_availability_zones" "available" {
 }
 
 
-# Using module to deploy VPC
+# Using module to define base VPC
 module "main-vpc" {
   source         = "terraform-aws-modules/vpc/aws"
   version        = "3.14.2"
   name           = "${var.env}-main-vpc"
-  cidr           = "10.1.0.0/16"
+  cidr           = var.vpc_cidr
   azs            = [for az in data.aws_availability_zones.available.names : az]
   public_subnets = var.public_subnet_cidr
 
