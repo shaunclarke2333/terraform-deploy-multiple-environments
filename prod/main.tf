@@ -1,4 +1,4 @@
-# Terraform block with required provider and terraform version listed
+# Terraform block with required provider and terraform version listed.
 terraform {
   required_providers {
     aws = {
