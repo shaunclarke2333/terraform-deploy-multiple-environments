@@ -14,7 +14,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-#Declaring availability zone data source
+#Declaring availability zone data source.
 data "aws_availability_zones" "available" {
   state = "available"
 }
