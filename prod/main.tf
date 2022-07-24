@@ -9,7 +9,7 @@ terraform {
   required_version = ">=0.14.9"
 }
 
-# Provider block with region defined
+# Provider block with region defined.
 provider "aws" {
   region = "us-east-1"
 }
